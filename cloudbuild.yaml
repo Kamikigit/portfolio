@@ -13,5 +13,7 @@ steps:
   - './node'
 - name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['build']
+- name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['run --rm node sh -c "npm install -g create-react-app && create-react-app react-sample"']
+- name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['up']
