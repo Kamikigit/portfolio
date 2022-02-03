@@ -10,7 +10,7 @@ steps:
   - 'gcr.io/$PROJECT_ID/docker-compose:latest'
   - '-t'
   - 'gcr.io/$PROJECT_ID/docker-compose:${_DOCKER_COMPOSE_VERSION}'
-  - '.'
+  - './node'
 - name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['build']
   args: ['run --rm node sh -c "npm install -g create-react-app && create-react-app react-sample"']
