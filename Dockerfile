@@ -7,7 +7,7 @@ FROM node:16-alpine
 # RUN useradd -m -s /bin/bash -u $UID $USERNAME
 # USER $USERNAME
 WORKDIR /usr/src/app
-COPY ./node/app/react-sample/* ./
+COPY ./node/app/react-sample/ ./
 RUN npm install
 ENV PATH ./node/app/react-sample/node_modules/.bin:$PATH
 CMD ["npm", "start"]
