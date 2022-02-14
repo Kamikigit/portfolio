@@ -24,6 +24,11 @@ li {
   list-style: none;
 }
 
+.section {
+  padding: 60px 50px;
+}
+
+
 /*--------------------------------
  タイトル
 ---------------------------------*/
@@ -125,7 +130,7 @@ li {
 ---------------------------------*/
 .gnav {
   position: sticky;
-  top: 20vh;
+  top: 120px;
   z-index: 1;
   width: 100%;
   background-color: #fff;
@@ -136,6 +141,7 @@ li {
 }
 
 .gnav-list {
+  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -161,7 +167,33 @@ li {
 }
 
 
+/*--------------------------------
+リンク
+---------------------------------*/
+#links {
+  margin: 150px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
 
+.box{
+  border:1px solid #333;
+  display: block;
+  margin: 20px 20px;
+  text-align: center;
+  width: 50vw;
+  position: relative;
+}
+
+.box a::after{
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 /*--------------------------------
  フッター
@@ -196,11 +228,15 @@ li {
 
   /* レイアウト */
   .section {
-    padding: 60px 0;
+    padding: 60px 50px;
   }
 
   .inner {
     padding: 0 20px;
+  }
+
+  .box{
+    width:70vw;
   }
 
   /*  header */
