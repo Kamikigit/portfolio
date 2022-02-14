@@ -47,8 +47,19 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65vh;
   text-align: center;
+  background-color: #b5ccdb;
+}
+
+.big {
+  height: 65vh;
+}
+
+.small{
+  display: flex;
+  position:sticky;
+  top:0;
+  /* height: 20vh; */
   background-color: #b5ccdb;
 }
 
@@ -80,7 +91,6 @@ li {
   bottom: 30px;
 } */
 
-
 .header-title {
   font-family: 'Monoton';
   font-size: 72px;
@@ -95,13 +105,27 @@ li {
   letter-spacing: .08em;
 }
 
+.header-title.small {
+  font-family: 'Monoton';
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 0px;
+  color: #f092c1;
+}
+.header-subtitle.small {
+  font-family: "Montserrat Alternates";
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: .08em;
+}
+
 
 /*--------------------------------
 グローバルナビ
 ---------------------------------*/
 .gnav {
   position: sticky;
-  top: 0;
+  top: 20vh;
   z-index: 1;
   width: 100%;
   background-color: #fff;
